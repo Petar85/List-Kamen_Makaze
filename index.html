@@ -1,46 +1,21 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Rock Paper Scissors Part 6</title>
-  </head>
-  <body>
-    <script type="text/javascript">
-      // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
-      var choices = ["r", "p", "s"];
-
-      // Creating variables to hold the number of wins, losses, and ties. They start at 0.
-      var wins = 0;
-      var losses = 0;
-      var ties = 0;
-
-      for (let i = 0; i < 3; i++) {
-        var userChoice = prompt("Please select r or p or s");
-        //   console.log("userChoice: ", userChoice)
-        if (userChoice === "r" || userChoice === "p" || userChoice === "s") {
-          var computerChoice =
-            choices[Math.floor(Math.random() * choices.length)];
-          //   console.log("computerChoice: ", computerChoice)
-
-          if (
-            (userChoice === "r" && computerChoice === "s") ||
-            (userChoice === "p" && computerChoice === "r") ||
-            (userChoice === "s" && computerChoice === "p")
-          ) {
-            wins++;
-            console.log("YOU WIN");
-          } else if (userChoice === computerChoice) {
-            ties++;
-            console.log("YOU TIED");
-          } else {
-            losses++;
-            console.log("YOU LOSE");
-          }
-        }else{
-            alert("sorry, this only works when you press r or p or s")
-        }
-      }
-      alert("Wins: " + wins + "Losses: " + losses + "Ties: " + ties);
-    </script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+<header>
+  <h1>Rock Paper Scissors</h1>
+</header> 
+<div class="score-board">
+  <div id="user-label" class="badge">user</div>
+  <div id="computer-label" class="badge">comp</div>
+  <span id="user-score">0</span>:<span id="computer-score">0</span>
+</div>
+<div class="result">
+  <p>Paper covers rock. You win!</p>
+</div>
+</body>
 </html>
