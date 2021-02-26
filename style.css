@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: floralwhite;
+}
+
+header > h1 {
+    color: #25272e;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
