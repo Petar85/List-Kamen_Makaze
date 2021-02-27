@@ -4,12 +4,24 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #24272E;
+}
 header {
     background: floralwhite;
+    padding: 20px;
 }
 
 header > h1 {
-    color: #25272e;
+    color: #24272E;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.score-board {
+    margin: 20px auto;
+    border: 3px solid white;
+    width: 200px;
+    color: white;
+    font-size: 46px;
 }
