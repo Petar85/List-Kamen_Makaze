@@ -75,3 +75,14 @@ header > h1 {
     display: inline-block;
 
 }
+
+.choice:hover {
+    cursor: pointer;
+    background:  #24272E;
+}
+
+#action-message {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
