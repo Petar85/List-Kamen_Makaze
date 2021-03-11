@@ -29,3 +29,5 @@ function main() {
         game("s");
     })
 }
+
+main();
