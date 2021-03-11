@@ -14,6 +14,24 @@ function getComputerChoice() {
     return choices [randomNumber]; 
 }
 
+function win() {
+
+}
+
+function lose() {
+
+}
+
+function draw() {
+    
+}
+
+function convertToWord(letter) {
+    if (letter === "r") return "Rock";
+    if (letter === "p") return "Paper";
+    return "Scissors";
+}
+
 function game(userChoice){
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChioice) {
