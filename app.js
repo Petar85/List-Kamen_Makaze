@@ -17,3 +17,9 @@ function getComputerChoice() {
 function game(userChoice){
     const computerChioice = getComputerChoice();
 }
+
+function main() {
+    rock_div.addEventListener('click', function() {
+        game("r");
+    })
+}
