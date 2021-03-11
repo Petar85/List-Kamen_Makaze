@@ -15,7 +15,24 @@ function getComputerChoice() {
 }
 
 function game(userChoice){
-    const computerChioice = getComputerChoice();
+    const computerChoice = getComputerChoice();
+    switch (userChoice + computerChioice) {
+        case "rp":
+        case "pr":
+        case "sp":
+        console.log("USER WINS");
+        break;
+        case "rp":
+        case "ps":
+        case "sr":
+        console.log("USER LOSES");
+        break;
+        case "rr":
+        case "pp":
+        case "ss":
+            console.log("It's draw");
+            break;
+    }
 }
 
 function main() {
