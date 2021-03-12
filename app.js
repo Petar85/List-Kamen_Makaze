@@ -29,7 +29,7 @@ function win(userChoice, computerChoice) {
   result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats ${convertToWord(computerChoice)}${smallCompWord}. You Win!`;
 }
 
-function lose() {
+function lose(userChoice, computerChoice) {
     computerScore++;
    userScore_span.innerHTML = userScore;
    computerScore_span.innerHTML = computerScore;
@@ -38,13 +38,10 @@ function lose() {
   result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallCompWord}. You Lost!`;
 }
 
-function draw() {
-    userScore++;
-   userScore_span.innerHTML = userScore;
-   computerScore_span.innerHTML = computerScore;
+function draw(userChoice, computerChoice) {
    const smallUserWord = "user".fontsize(3).sub();
    const smallCompWord = "comp".fontsize(3).sub();
-  result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats ${convertToWord(computerChoice)}${smallCompWord}. You Win!"`;
+  result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallCompWord}. It's a draw!`;
 }
 
 function convertToWord(letter) {
