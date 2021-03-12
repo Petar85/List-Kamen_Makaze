@@ -17,7 +17,7 @@ function getComputerChoice() {
 function win() {
     userScore++;
    userScore_span.innerHTML = userScore;
-   computerScore_span = computerScore;
+   computerScore_span.innerHTML = computerScore;
 }
 
 function lose() {
