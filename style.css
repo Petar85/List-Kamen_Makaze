@@ -22,7 +22,10 @@ header {
     box-shadow: 0 0 10px #d01115;
 }
 
-
+.gray-glow {
+    border: 4px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+}
 
 header > h1 {
     color: #24272E;
