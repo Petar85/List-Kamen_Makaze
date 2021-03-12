@@ -16,8 +16,8 @@ function getComputerChoice() {
 
 function win() {
     userScore++;
-    console.log("win");
-    console.log(userScore);
+   userScore_span.innerHTML = userScore;
+   computerScore_span = computerScore;
 }
 
 function lose() {
@@ -36,7 +36,7 @@ function convertToWord(letter) {
 
 function game(userChoice){
     const computerChoice = getComputerChoice();
-    switch (userChoice + computerChioice) {
+    switch (userChoice + computerChoice) {
         case "rs":
         case "pr":
         case "sp":
