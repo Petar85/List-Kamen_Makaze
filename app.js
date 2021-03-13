@@ -50,7 +50,7 @@ function draw(userChoice, computerChoice) {
    const userChoice_div = document.getElementById(userChoice);
   result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallCompWord}. It's a draw!`;
   userChoice_div.classList.add('gray-glow');
-  setTimeout(() => userChoice_div.classList.remove('gray-glow'), 1000);
+  setTimeout(() => userChoice_div.classList.remove('gray-glow'), 500);
 }
 
 function convertToWord(letter) {
